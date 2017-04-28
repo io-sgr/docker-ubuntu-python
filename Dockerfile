@@ -15,5 +15,5 @@ RUN \
 	apt-get autoclean && \
 	apt-get autoremove --purge -y && \
 	curl -OsS https://bootstrap.pypa.io/get-pip.py && \
-	python get-pip.py --no-setuptools && \
+	python get-pip.py && \
 	rm -rf get-pip.py ~/.cache/pip/* /var/lib/apt/lists/* /var/cache/apt/* /tmp/* /var/tmp/*
