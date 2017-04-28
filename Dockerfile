@@ -16,5 +16,5 @@ RUN \
 	apt-get autoremove --purge -y && \
 	update-alternatives --install /usr/bin/python python /usr/bin/python3 10 && \
 	curl -OsS https://bootstrap.pypa.io/get-pip.py && \
-	python get-pip.py --no-setuptools && \
+	python get-pip.py && \
 	rm -rf get-pip.py ~/.cache/pip/* /var/lib/apt/lists/* /var/cache/apt/* /tmp/* /var/tmp/*
