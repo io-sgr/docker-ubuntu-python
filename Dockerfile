@@ -1,8 +1,8 @@
 FROM sgrio/ubuntu-base
 MAINTAINER SgrAlpha <admin@mail.sgr.io>
 
-ENV DEBIAN_FRONTEND noninteractive
-ENV LANG C.UTF-8
+ENV DEBIAN_FRONTEND=noninteractive \
+    LANG=C.UTF-8
 
 RUN \
 	apt-get update && \
