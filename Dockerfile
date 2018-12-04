@@ -1,4 +1,4 @@
-FROM sgrio/ubuntu-base
+FROM ubuntu:latest
 MAINTAINER SgrAlpha <admin@mail.sgr.io>
 
 ENV DEBIAN_FRONTEND=noninteractive \
@@ -10,6 +10,7 @@ RUN \
 	apt-get install \
 		ca-certificates \
 		curl \
+		apt-utils \
 		python3 \
 		--no-install-recommends -y && \
 	apt-get autoclean && \
